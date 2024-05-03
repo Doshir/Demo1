@@ -1,0 +1,165 @@
+* {
+    /*font-family: "Tenor Sans", sans-serif;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+    overflow-y: hidden;
+}
+
+header {
+    background-color: rgb(254, 250, 224);
+    align-items: center;
+    height: 120px;
+}
+
+.header-logo {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-content {
+    max-width: 1920px;
+    min-width: 1440px;
+    margin: 0 auto;
+    height: 120px;
+    gap: 246px;
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+}
+
+.nav-list {
+    margin-top: 38px ;
+    gap : 70px;
+    display : flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-list a {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item-practise:hover {
+    text-decoration: underline;
+}
+
+.nav-item-library:hover {
+    text-decoration: underline;
+}
+
+.nav-item-study {
+    text-decoration: underline;
+}
+
+.buttonLgn-popup {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 32px;
+    color: #FEFAE0;
+    background-color: #606C38;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonLgn-popup:active {
+    transform: translateY(4px);
+}
+
+h1 {
+    font-family: "Tenor Sans", sans-serif;
+    height: 75px;
+    text-align: center;
+    font-size: 54px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url("./images/background image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.study-container {
+    background: rgba(255, 255, 255, 0.2);
+    width: 1060px;
+    height: 400px;
+    margin: 200px auto;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.study-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*.study-grid::-webkit-scrollbar {*/
+/*    width: 200px;*/
+/*    height: 10px;*/
+/*    margin-top: 50px;*/
+/*    background-color: rgba(26, 24, 47, 0.15);*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.study-grid-grid::-webkit-scrollbar-thumb {*/
+/*    background: #606C38;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+.card {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 140px;
+    width: 240px;
+    margin: 10px;
+    background-color: rgb(254, 250, 224);
+    border-radius: 20px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.05),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.card:active {
+    transform: translateY(4px);
+}
+
+.type-icon {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.practise-icon {
+    height: 30px;
+    width: 30px;
+    color: black;
+}
+
+.task-type {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.task-name {
+    margin-left: 10px;
+}
+
+.task-count {
+    margin-left: 10px;
+}
